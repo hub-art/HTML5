@@ -12,33 +12,19 @@
             永久本地存储    localStorage
             临时存储
         -->
+        <form >
+            <input type="text" name="inp1" id="inp1">
+            <button id="btn">搜索</button>
+        </form>
+        <div>
+            <h1>搜索历史</h1>
+            <div id="content"></div>
+        </div>
     </body>
 </html>
-<script>
-    // 1.本地存储   ctrl + /
-    //浏览器兼容：HTML5新增
-    // console.log()
-    // console.dir()
-    // console.info()
-    
-    console.log(localStorage)
-    /*
-        Storage 对象
-        属性
-        [[prototype]] : 原型对象Storage    继承的方式   原型链(公有方法)
-        getItem():获取
-        setItem():设置
-        removeItem():删除
-            length:
-            arguments:
-            [[prototype]]:object    顶级对象(公有方法)
-    */
-   //localStorage   语法
-   //通过setItem()设置本地存储
-   localStorage.setItem("username","zhangsan")
-   //通过getItem()获取本地存储
-   console.log(localStorage.getItem("username"))
-   localStorage.removeItem("username")
+<!-- 引进外部的js文件 
 
-   //练习
-</script>
+    相对路径
+    绝对路径
+-->
+<script src="./script/2htmlt5新特性.js"></script>
