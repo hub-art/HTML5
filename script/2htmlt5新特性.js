@@ -45,3 +45,14 @@
         //单击按钮后
             //在"在搜索历史"下方显示用户的输入
             //将用户输入实现本地存储
+    
+    //JavaScrip = ECMAScip语法 + 浏览器接口API(BOM+DOM)
+    //            ES5
+    
+    console.dir("========"+p_arr)   //变量提升，先访问后声明
+    var p_arr = document.getElementsByTagName("p")
+    console.dir("********"+p_arr)   //类数组对象 对象.属性  对象["属性"]
+    //for(循环变量初始化只执行依次;判定循环结束的条件;下一次循环变量取值){}
+    for(var i = 0;i<p_arr.length;i++){
+        p_arr[i] = function fun1(){}
+    }
