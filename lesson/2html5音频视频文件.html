@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>音视频</title>
+</head>
+<body>
+    <!--视频video-->
+    <video src="" controls></video>
+    <br>
+    <!--音频audio-->
+    <audio src="../music/111.mp3"controls></audio>
+    <button>播放</button>
+    <button>暂停</button>
+    <button>静音</button>
+    <br><br><br><br><br>
+
+    <audio controls>
+        <source src="">
+    </audio>
+
+    <hr>
+    <!--练习:自定义简易音乐播放器
+        需求：当前音乐的标题、进度、封面、音乐、控制器    
+    -->
+    <!--模块化：组件-->
+    <div class="music-container" id="music-container">
+        <!--放置音频标题和进度条-->
+        <div class="music-info">
+            <h4 id=""title></h4>
+            <div class="progress-container" id="progress-container">
+                <div class="progress" id=""progress></div>
+            </div>
+        </div>
+        <!--放置音频组件-->
+        <div></div>
+        <!--放置音频封面-->
+        <!--放置音频控制面板-->
+    </div>
+</body>
+</html>
+<!--放置音频组件-->
+<script src="../script/2音视频.js" id="audio"></script>
+<!--放置音频封面-->
+<div class="img-container">
+    <img src="../image/微信头像.jpg" alt="music-cover" id="cover">
+</div>
+<!--放置音频控制面板-->
+<div class="navigation">
+    <!--上一首-->
+    <button id="prev" class="action-btn">
+
+    </button>
+    <!--播放/暂停-->
+    <button id="play" class="action-btn">
+
+    </button>
+    <!--下一首-->
+    <button id="next" class="action-btn">
+        
+    </button>
+</div>
